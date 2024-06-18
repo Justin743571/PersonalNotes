@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--容器-->
+<html lang="en">
+  <head>
+    <style>
+      .product {
+        background-color: gold;
+        width: 300px;
+      }
+      span{
+        background-color: gold;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--div为块级元素,永远占一行-->
+    <div class="product">
+      <p>hhhhhh</p>
+      <!--这里的# 为只是滚动回当前页面的顶部-->
+      <a href="#">Link</a>
+    </div>
+    <div class="product">
+      <p>hhhhhh</p>
+      <a href="#">Link</a>
+    </div>
+
+    <p> <div class="product">a</div>bcdefghg</p>
+    <!-- span为行内元素，它不会自己占一行-->
+    <p><span>a</span>bcdefghg</p>
+
+
+
+    <!--还有以下语义元素article，time，mark,figure,figcaption 作用:让搜索引擎更容易识别，更严谨 -->
+    <article>
+        <h1>Heading</h1>
+        <p>今天时间为<time datetime="2023-9-5 20:34">2023/9/5</time></p>
+        <p>
+            <mark>wd</mark>agkljsldgajlgasgkasl
+        </p>
+        <!--figure也是一个容器为插图-->
+        <figure>
+            <img src="" alt="">
+            <!--figcaption用于描述包含在 <figure> 中的图像、图表、表格或其他媒体内容，以提供对内容的额外信息。-->
+            <figcaption>my coffee this morning</figcaption>
+        </figure>
+    </article>
+
+    
+  </body>
+</html>

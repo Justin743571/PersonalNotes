@@ -1,0 +1,19 @@
+body {
+  margin: 10px;
+}
+/*双冒号代表伪元素选择器，单冒号代表伪类选择器*/
+P::first-letter {
+  font-size: 140%;
+  font-weight: bold;
+}
+p::first-line {
+  font-weight: bold;
+}
+/*鼠标选中一些文字，改变默认蓝色高亮显示*/
+::selection {
+  color: deeppink;
+}
+p::after {
+  content: "...";
+  display: block;
+}

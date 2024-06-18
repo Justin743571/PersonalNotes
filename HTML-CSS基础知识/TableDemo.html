@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--表格-->
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      td,
+      th {
+        border: 1px solid red;
+        border-collapse: collapse;
+        padding: 5px;
+      }
+      tfoot {
+        text-align: left;
+      }
+    </style>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <table>
+      <!--thead为表头区域-->
+      <thead>
+        <tr>
+          <!--colspan表示为扩展单元格-->
+          <th colspan="2">费用</th>
+        </tr>
+        <!--创建表格表头为th-->
+        <tr>
+          <th>物品</th>
+          <th>价格</th>
+        </tr>
+      </thead>
+      <!--tbody为表格区域-->
+      <tbody>
+        <!--定义行 tr为表格行-->
+        <tr>
+          <!--td为表格数据单元格-->
+          <td>衣服</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>电脑</td>
+          <td>$599</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>总计</th>
+          <th>$699</th>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

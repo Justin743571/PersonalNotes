@@ -1,0 +1,19 @@
+/*.box {
+  width: 200px;
+  height: 200px;
+  /*0.5表示半透明 填0表示透明 填1表示不透明*/
+/* background-color: rgba(203, 205, 28, 0.5);
+}*/
+
+/*渐变官方  cssgradient.io 可以到这里面设置渐变方式，底线也会有代码*/
+.box {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(dodgerblue, yellow);
+  /*第一个值为向右 负数为向左 第二个值为向下 负数为向上 第三个值来设置影子的模糊度 */
+  box-shadow: 10px 10px 10px grey;
+}
+h1 {
+  color: white;
+  text-shadow: 3px 3px 5px rgb(0, 0, 0, 0.2);
+}

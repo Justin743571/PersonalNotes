@@ -1,0 +1,8 @@
+.first {
+  /* display: none;
+    visibility: hidden;
+    他们两的区别在于 它占据的位置没了 
+    第二个相反 占据的位置还有，但是人没了，相对于隐身了*/
+  display: none;
+  visibility: hidden;
+}

@@ -1,0 +1,26 @@
+.tweet {
+  border: 3px solid gray;
+  /*第三种方式为设置溢出*/
+  overflow: hidden;
+}
+
+/*这是第二种方式清除浮动，防止给后续排版带来影响
+  .tweet::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+  */
+
+.avatar {
+  width: 5rem;
+  height: 5rem;
+  background-color: gold;
+  /*文字会自动环绕着头像盒子，这就是浮动的效果*/
+  float: left;
+  margin-right: 0.5rem;
+}
+.clear {
+  /*这段代码就表示清除浮动属性 both表示两边都清除*/
+  clear: both;
+}

@@ -1,0 +1,24 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/*
+   rotate()旋转函数，可以将元素旋转 
+   scale()函数可以将元素放大或者缩小 
+   skew()函数可以将元素向左或者向右拉伸 
+   translate()转换函数可以在屏幕中定位  向左或者向右移动*/
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: gold;
+}
+
+.box:hover {
+  /*使用变化属性transform    deg为度数*/
+  /*顺序也是有影响的我们是想先将它旋转45度，还是先将它向右移动50px 二维变化*/
+  transform: rotate(45deg) translateX(50px);
+}

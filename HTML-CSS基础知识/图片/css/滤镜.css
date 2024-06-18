@@ -1,0 +1,7 @@
+.meal:hover {
+  /*下面这行代码 前面表示使用filter滤镜，
+    后面就是调用一个函数表示图片灰的程度
+    blur()表示为模糊滤镜 */
+  filter: grayscale(50%) blur(3px);
+}
+/*网上有很多css滤镜 可以到网上找到 (css filter functions) */

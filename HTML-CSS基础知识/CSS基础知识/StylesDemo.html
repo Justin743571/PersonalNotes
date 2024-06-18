@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--css的三种样式，{外表样式，内部样式，行内样式}-->
+<html lang="en">
+  <head>
+    <!--统一css-->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!--link外部样式链接-->
+    <link rel="stylesheet" href="css/Styles.css" />
+    <!--再次使用style 可以覆盖外部样式 style里面为内部样式-->
+    <style>
+      p {
+        color: black;
+      }
+
+      #first {
+        color: blue;
+        font-weight: bold;
+      }
+    </style>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--行内样式的例子 用标识符表示-->
+    <p id="first">
+      Thank you so much for putting this crash course out for free. I'm in
+      school learning all back-end Java type data structures and algorithms but
+      they haven't taught us ANYTHING about front-end besides some old JavaFX
+      type projects. This was exactly what I needed to get familiar with HTML
+      and CSS and start to i guess... know what I don't know haha. Cheers!
+    </p>
+    <p>
+      Thank you so much for putting this crash course out for free. I'm in
+      school learning all back-end Java type data structures and algorithms but
+      they haven't taught us ANYTHING about front-end besides some old JavaFX
+      type projects. This was exactly what I needed to get familiar with HTML
+      and CSS and start to i guess... know what I don't know haha. Cheers!
+    </p>
+  </body>
+</html>

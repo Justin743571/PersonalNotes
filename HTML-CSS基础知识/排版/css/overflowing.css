@@ -1,0 +1,8 @@
+.box {
+  border: 3px solid gold;
+  width: 150px;
+  height: 150px;
+  /*visible表示可见到溢出 而hidden表示不可见到溢出(看不见溢出的部分)
+    还有scroll 表示溢出的部分隐藏了，需要通过滚轮向下滚动才可以看到下面的东西*/
+  overflow: auto;
+}

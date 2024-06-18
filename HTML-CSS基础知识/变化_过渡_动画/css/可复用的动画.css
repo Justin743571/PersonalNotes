@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* 定义关键帧,css动画也有很多帧*/
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: rotate(45deg);
+    background: tomato;
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: gold;
+}
+
+.animation-pop {
+  animation-name: pop;
+  /*一个动画需要多久时间*/
+  animation-duration: 4s;
+  animation-delay: 1s;
+  /*循环次数*/
+  animation-iteration-count: infinite;
+  /*动画进度属性*/
+  animation-timing-function: ease-in;
+  /*动画顺序 这个顺序是在做完第一个后可以反向做动画*/
+  animation-direction: initial;
+}

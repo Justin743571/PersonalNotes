@@ -1,0 +1,10 @@
+p {
+  color: deeppink;
+  border: 1px solid black;
+}
+strong {
+  /*下面这行代码文本颜色将被还原为浏览器默认值*/
+  color: initial;
+  /*下面代码继承p中的border属性*/
+  border: inherit;
+}

@@ -1,0 +1,6 @@
+p {
+  color: black;
+  /**一般padding有4个值，首先是先上 右，下，左，*/
+  padding: 0px;
+  margin: 20px;
+}

@@ -1,0 +1,19 @@
+/*如果在gold后面使用 !important 就会把其他的规则都忽略掉*/
+h1 {
+  color: gold;
+}
+/*类选择器的优先级为10 id选择器优先级为100 元素选择器优先级为1*/
+.highLight {
+  color: red;
+}
+#product {
+  color: blue;
+}
+/*这里的优先级为101*/
+h1#product {
+  color: deeppink;
+}
+/*这里的优先级为110*/
+.kid #product {
+  color: rgb(40, 175, 175);
+}

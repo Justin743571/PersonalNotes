@@ -1,0 +1,68 @@
+.container {
+  /*把显示状态设置为网格*/
+  display: grid;
+  /*设置3×2*/
+  /*这个是设置表格行*/
+  /*一行”在没有特别标注时都是指横向可见的一行；3、“一列”则是指纵向可见的一列。*/
+  /*grid-template-rows: 100px 100px 100px;
+  grid-template-columns: repeat(2, 100px);*/
+  /*具体来说，repeat 函数有两个参数：
+    第一个参数是要重复的轨道数量。 
+    第二个参数是每个轨道的大小。*/
+  /*grid-template 它包含上面两个属性
+  grid-template: repeat(3, 100px) / repeat(2, 100px);*/
+
+  /*下面做行代码表示  /的左边为rows  /的右边为columns 
+  grid-template: 100px auto 100px / 30% 70%;
+  这个代码有点有毛病因为这里面的%无法显示可用空间 */
+
+  /*fr表示可用空间*/
+  grid-template: 100px auto 100px / 30fr 70fr;
+  /*grid-template-areas 这个是网络模板区域,来确定合并的单元格 另外一种方式的合并
+    grid-area           然后一个单独的网格区域来表示填充*/
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+
+  /*三个间隔属性 行间隔row-gap 列间隔column-gap 间隔 gap*/
+  row-gap: 10px;
+  column-gap: 10px;
+  gap: 10;
+
+  /*items 对应的是单元格内部的元素 */
+  /*这个表示横轴对齐justify-items: center;*/
+  /*这个表示垂直对齐align-items: center;*/
+
+  /*stretch可以把盒子拉伸，但是如果我们已经固定了宽或者高就不行，
+  但是要实现这种效果我们不能去定义盒子的宽或高*/
+  justify-items: stretch;
+  align-items: stretch;
+
+  /*content对应的是网格系统上的单元格
+  justify-content: center;
+  align-content: center;
+  */
+
+  border: 3px solid lightgrey;
+  height: 50rem;
+}
+.box {
+  background-color: gold;
+}
+
+/*表格中合并单元格 
+有三个属性
+合并行grid-row 合并列grid-column 合并区域grid-ared*/
+.box-one {
+  /*如果我们在里面填个2 说明把这个元素放到2那个容器中了而第一个元素空了，
+    后面的元素向后排*/
+  /*如果你想一个元素占据多格，可以加上一个斜线，然后跟上线号
+  grid-column: 1/3;*/
+  grid-area: header;
+  /*如果我们在下面这个行代码中填2，那么第一个盒子就到了第二行，其他盒子会自动从左上到右下排列
+  grid-row: 2;*/
+}
+.box-four {
+  grid-area: footer;
+}
