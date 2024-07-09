@@ -1,8 +1,0 @@
-form {
-  width: 25%;
-  padding: 2rem;
-}
-textarea {
-  /*设置这个就不能手动调节框框大小了*/
-  resize: none;
-}

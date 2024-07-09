@@ -1932,7 +1932,7 @@ export default Form;
 
 
 
-## 七.使用 ZOD 进行基于模式的验证
+## 七.使用 Zod 进行基于模式的验证
 
 查看zod网页
 
